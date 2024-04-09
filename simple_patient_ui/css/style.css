@@ -12,30 +12,6 @@ header {
   text-align: center;
 }
 
-nav ul {
-  padding: 0;
-  /*     list-style: none; */
-  text-align: center;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 1.25em;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-}
-
-.main-about-us,
-.testimonials {
-  padding: 20px;
-  margin: 20px;
-  background-color: white;
-  border-radius: 5px;
-}
-
 footer {
   background-color: #333;
   color: white;

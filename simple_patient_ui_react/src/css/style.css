@@ -5,45 +5,11 @@ body {
   background-color: #f4f4f4;
 }
 
-header {
-  background-color: #007bff;
-  color: white;
-  padding: 1.25em;
-  text-align: center;
-}
-
-nav ul {
-  padding: 0;
-  /*     list-style: none; */
-  text-align: center;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 1.25em;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-}
-
-.main-about-us,
-.testimonials {
+.content-section {
   padding: 20px;
   margin: 20px;
   background-color: white;
   border-radius: 5px;
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
 
 /* Modal Window */
@@ -82,49 +48,6 @@ footer {
   cursor: pointer;
 }
 
-.hero-image {
-  position: relative;
-  height: 60vh; /* 60% of the viewport height */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-.hero-text {
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-  padding: 2em;
-  border-radius: 10px;
-}
-
-/* icon image */
-img.icon {
-  max-width: 2%;
-  max-height: 2%;
-  filter: brightness(0) invert(1);
-}
-
-.patients-list table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.patients-list td,
-th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-.patients-list tr:nth-child(even) {
-  background-color: #dddddd;
-}
-
 /* forms  */
 
 input[type="text"],
@@ -153,10 +76,29 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-.contactus-form-container {
+.form-container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+.table-list {
+  width: 100%;
+}
+.table-list table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+.table-list td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.table-list tr:nth-child(even) {
+  background-color: #dddddd;
 }
 
 /*working only in ipad portrait device*/

@@ -1,26 +1,22 @@
-import React from 'react';
-import PatientsTable from './PatientsTable.js';
-import './css/normalize.css';
-import './css/style.css';
-
+import React from "react";
+import Patients from "./components/Patients/Patients";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import AboutUs from "./components/AboutUs/AboutUs";
+import ContactUs from "./components/ContactUs/ContactUs";
+import "./css/normalize.css";
+import "./css/style.css";
 
 const App = () => {
   return (
-    <div>
-      <header>
-        <h1>Patient Management</h1>
-        {/* Navigation and other header content */}
-      </header>
-      <main>
-        <section className="patients-list">
-          <PatientsTable />
-        </section>
-        {/* Form for adding patients would go here */}
-      </main>
-      <footer>
-        <p>&copy; 2023 Amazing Patient Management System</p>
-      </footer>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/patients" element={<Patients />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
